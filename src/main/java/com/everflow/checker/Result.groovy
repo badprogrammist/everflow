@@ -16,12 +16,13 @@ class Result {
     }
 
     boolean isSuccess() {
+        def result = true
         rules.each {rule, status ->
             if(!status) {
-                return false
+                result = false
             }
         }
-        return true
+        return result
     }
 
 }

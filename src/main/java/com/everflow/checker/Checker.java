@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @author Ildar Gafarov on 13.05.16.
+ * @author Ildar Gafarov
  */
 @Service
 public class Checker {
@@ -35,8 +35,14 @@ public class Checker {
         List<Difference> differences = differenceFinder.find(rightSentence, enteredSentence);
         Map<Rule, Boolean> rulesResult = new HashMap<>();
 
-        for(ExerciseRule exerciseRule: exercise.getRules()) {
-            rulesResult.put(exerciseRule.getRule(), true);
+        if(exercise.getSentence().equalsIgnoreCase(entered.getText())) {
+            for(ExerciseRule exerciseRule: exercise.getRules()) {
+                rulesResult.put(exerciseRule.getRule(), true);
+            }
+        } else {
+            for(ExerciseRule exerciseRule: exercise.getRules()) {
+                rulesResult.put(exerciseRule.getRule(), false);
+            }
         }
 
         for(Difference difference : differences) {

@@ -3,7 +3,7 @@ package com.everflow.language;
 import com.fasterxml.jackson.annotation.JsonValue;
 
 /**
- * @author Ildar Gafarov on 14.09.16.
+ * @author Ildar Gafarov
  */
 public enum PartOfSpeech {
     NOUN("сущ."),

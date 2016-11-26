@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service
 import javax.annotation.PostConstruct
 
 /**
- * @author Ildar Gafarov on 16.05.16.
+ * @author Ildar Gafarov
  */
 @Service
 class ExerciseRepository {
@@ -20,11 +20,7 @@ class ExerciseRepository {
     }
 
     public Exercise get(Long id) {
-        exercises.each { it ->
-            if (it.id == id)
-                return it
-        }
-        return null
+        return exercises.find { it.id == id }
     }
 
     public List<Exercise> getAll(Rule rule) {

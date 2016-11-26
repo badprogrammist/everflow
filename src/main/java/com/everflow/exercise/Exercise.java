@@ -3,7 +3,7 @@ package com.everflow.exercise;
 import java.util.List;
 
 /**
- * @author Ildar Gafarov on 16.05.16.
+ * @author Ildar Gafarov
  */
 public class Exercise {
     private Long id;

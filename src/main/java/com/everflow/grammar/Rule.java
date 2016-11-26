@@ -3,7 +3,7 @@ package com.everflow.grammar;
 import java.util.*;
 
 /**
- * @author Ildar Gafarov on 23.05.16.
+ * @author Ildar Gafarov
  */
 public enum Rule {
     TO_BE("Глагол to be", "tobe", 1),

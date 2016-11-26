@@ -4,7 +4,7 @@ package com.everflow.checker;
 import com.everflow.sentence.Phrase;
 
 /**
- * @author Ildar Gafarov on 13.05.16.
+ * @author Ildar Gafarov
  */
 public class Difference {
 

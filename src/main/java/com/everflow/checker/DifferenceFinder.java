@@ -10,7 +10,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * @author Ildar Gafarov on 13.05.16.
+ * @author Ildar Gafarov
  */
 @Service
 public class DifferenceFinder {
@@ -53,17 +53,19 @@ public class DifferenceFinder {
                         0, equality.rightPhrasePosition,
                         0, equality.enteredPhrasePosition,
                         rightPhrases, enteredPhrases), differences);
-                Equality nextEquality = equalities[equalitySeek + 1];
-                addDifference(calcDifference(
-                        equality.rightPhrasePosition + 1, nextEquality.rightPhrasePosition,
-                        equality.enteredPhrasePosition + 1, nextEquality.enteredPhrasePosition,
-                        rightPhrases, enteredPhrases), differences);
+                if(equalities.length != 1) {
+                    Equality nextEquality = equalities[equalitySeek + 1];
+                    addDifference(calcDifference(
+                            equality.rightPhrasePosition + 1, nextEquality.rightPhrasePosition,
+                            equality.enteredPhrasePosition + 1, nextEquality.enteredPhrasePosition,
+                            rightPhrases, enteredPhrases), differences);
+                }
             } else if (equalitySeek == equalities.length - 1) {
                 addDifference(calcDifference(
                         equality.rightPhrasePosition + 1, rightPhrases.length,
                         equality.enteredPhrasePosition + 1, enteredPhrases.length,
                         rightPhrases, enteredPhrases), differences);
-            } else {
+            } else if(equalities.length != 1) {
                 Equality nextEquality = equalities[equalitySeek + 1];
                 addDifference(calcDifference(
                         equality.rightPhrasePosition + 1, nextEquality.rightPhrasePosition,

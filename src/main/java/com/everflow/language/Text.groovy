@@ -1,7 +1,7 @@
 package com.everflow.language
 
 /**
- * @author Ildar Gafarov on 21.09.16.
+ * @author Ildar Gafarov
  */
 class Text {
     String text

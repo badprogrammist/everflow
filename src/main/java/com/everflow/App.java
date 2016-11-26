@@ -7,7 +7,7 @@ import org.springframework.boot.context.web.SpringBootServletInitializer;
 import org.springframework.context.annotation.ImportResource;
 
 /**
- * @author Ildar Gafarov on 13.05.16.
+ * @author Ildar Gafarov
  */
 @ImportResource("classpath:application-context.xml")
 @SpringBootApplication

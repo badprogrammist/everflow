@@ -1,7 +1,7 @@
 package com.everflow.sentence;
 
 /**
- * @author Ildar Gafarov on 13.05.16.
+ * @author Ildar Gafarov
  */
 public class Word extends Part<Word> {
 

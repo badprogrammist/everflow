@@ -7,7 +7,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * @author Ildar Gafarov on 14.05.16.
+ * @author Ildar Gafarov
  */
 @Service
 public class PunctuationMarksRemover {

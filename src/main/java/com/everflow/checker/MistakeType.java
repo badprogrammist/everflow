@@ -1,7 +1,7 @@
 package com.everflow.checker;
 
 /**
- * @author Ildar Gafarov on 13.05.16.
+ * @author Ildar Gafarov
  */
 public enum MistakeType {
     ABSENT

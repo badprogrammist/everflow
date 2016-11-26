@@ -48,4 +48,10 @@ class ExerciseController {
         return result
     }
 
+    @RequestMapping(method = RequestMethod.GET, value = "/reset")
+    def getReset() {
+        profile.reset()
+        return "reseted"
+    }
+
 }
