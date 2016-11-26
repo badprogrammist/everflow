@@ -208,11 +208,11 @@
             var tmp = $('#user-answer').val(); 
             var form_value = tmp.trim();
 
-            var formData = { 'id':id, 'text':form_value };            
+            var formData = {'text':form_value };
             var data_from_ajax = JSON.stringify($.toJSON(formData));
             
             $.ajax({
-                url: '/site/check-word', //заменить url!!!
+                url: '/api/check/'+id, //заменить url!!!
                 headers: {"Content-Type":"application/json"},
                 crossDomain: true,
                 type: 'post',
@@ -256,7 +256,7 @@
             $('#next-btn').click(function(){
             
             $.ajax({
-                url: '/site/give-me-the-word', //заменить url!!!
+                url: '/api/next', //заменить url!!!
                 headers: {"Content-Type":"application/json"},
                 crossDomain: true,
                 type: 'post',
@@ -293,7 +293,7 @@
             $('#stats').click(function(){
             
             $.ajax({
-                url: '/site/give-me-stats', //заменить url!!!
+                url: '/api/stats', //заменить url!!!
                 headers: {"Content-Type":"application/json"},
                 crossDomain: true,
                 type: 'post',

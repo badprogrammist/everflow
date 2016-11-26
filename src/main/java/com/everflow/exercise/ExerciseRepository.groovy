@@ -50,7 +50,7 @@ class ExerciseRepository {
                 }
                 rules.add(new ExerciseRule(parts, Rule.findByCode(r.rule)))
             }
-            result.add(new Exercise(e.id, e.sentence, e.translate, rules))
+            result.add(new Exercise(e.id as Long, e.translate as String, e.sentence as String, rules as List))
         }
         return result
     }
