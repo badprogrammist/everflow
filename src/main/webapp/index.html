@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+    <title>Everflow</title>
+    <meta name="description" content="Everflow - language learning">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" type="text/css" href="css/compiled/theme.css">
+    <link rel="stylesheet" type="text/css" href="css/vendor/animate.css">
+
+    <!-- javascript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.json.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/jquery.knob.js"></script>
+</head>
+<body id="home">
+    <header class="navbar navbar-inverse hero" role="banner">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="index.html" class="navbar-brand">Everflow</a>
+            </div>
+            <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Лидеры <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html">Ivan Veselov</a></li>
+                            <li><a id="cheking-two-ajax">Sergei Svetlakov</a></li>
+                            <li><a id="cheking-three-ajax">John Connor</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Мои задания <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a style="cursor: pointer;" onclick="$('.second-container').fadeOut(100); $('.first-container').delay(200).fadeIn(1000);">Главная</a></li>
+                            <li><a style="cursor: pointer;" onclick="$('.first-container').fadeOut(100); $('.second-container').delay(200).fadeIn(1000);">Задания</a></li>
+                        </ul>
+                    </li>                                     
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Мой профиль<b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a id="stats">Статистика</a></li>
+                            <li><a>Настройки</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="hero" style="background-image: url('images/bg.jpg');">
+        <div class="bg-dark" style="">
+            <div class="container first-container" style="display: none;">
+                <h1 class="hero-text animated fadeInDown">
+                    The best interfaces <br />
+                    for your web & mobile apps
+                </h1>
+                <p class="sub-text animated fadeInDown">
+                    Get a complete existing website with great design up and running in no time.
+                </p>
+                <div class="cta animated fadeInDown trying-btn" onclick="$('.first-container').fadeOut(100); $('.second-container').delay(200).fadeIn(1000);">
+                    <a class="button-outline">Let's try!</a>                
+                </div>
+                <div class="img img-notebook"></div>
+            </div>
+            <div class="container second-container">
+                <div><h1>Your tasks</h1></div>
+                <div class="block-task">
+                    <div id="block_for_task" style="height: 25px; width: 100%;"></div>
+                    <div id="task" class="task">
+                        <div id="text_fror_translate" style="height: 50px; width: 100%;"></div>                        
+                        <div id="block_for_answer" style="height: 70px; width: 100%;"></div>   
+                    </div>
+                    <div class="input-block"><input id="user-answer" class="input-task"></div>
+                    <button id="ok-btn">CHECK</button>
+                    <button id="wrong">HINT</button>
+                    <button id="next-btn">NEXT</button>
+                </div>
+            </div>
+            <div class="container third-container" style="display: none;">
+                <div>
+                    <input type="text" value="75" class="dial">
+
+                    <script>
+                        $(function() {
+                            $(".dial").knob(
+                            {
+                                'width' : 100,
+                                'height' : 100
+                            }
+                                );
+                            }
+                        });
+                    </script>
+                </div>
+                <div id="stats-container">
+                </div>
+            </div>
+        </div>
+    </div>  
+
+    <div id="footer-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 menu">
+                    <h3>Overview</h3>
+                    <ul>
+                        <li>
+                            <a href="features.html">Features</a>
+                        </li>
+                        <li>
+                            <a href="services.html">Services</a>
+                        </li>
+                        <li>
+                            <a href="pricing.html">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="support.html">Support</a>
+                        </li>
+                        <li>
+                            <a href="blog.html">Blog</a>
+                        </li>
+                        <li>
+                            <a href="blog.html">Coming soon</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 menu">
+                    <h3>Menu</h3>
+                    <ul>
+                        <li>
+                            <a href="features.html">About us</a>
+                        </li>
+                        <li>
+                            <a href="services.html">Contact us</a>
+                        </li>
+                        <li>
+                            <a href="aboutus.html">Jobs</a>                            
+                        </li>
+                        <li>
+                            <a href="support.html">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="blog.html">Status</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-2 menu">
+                    <h3>Social</h3>
+                    <ul>
+                        <li>
+                            <a href="features.html">Youtube</a>
+                        </li>
+                        <li>
+                            <a href="services.html">Facebook</a>
+                        </li>
+                        <li>
+                            <a href="pricing.html">Twitter</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 newsletter">
+                    <div class="signup clearfix">
+                        <p>
+                            Sign up for the newsletter and we'll inform you of updates, offers and more.
+                        </p>
+                        <form>
+                            <input type="text" name="email" class="form-control" placeholder="Your email address" />
+                            <input type="submit" value="Sign up" />
+                        </form>
+                    </div>
+                    <a href="#">
+                        <img src="images/social/social-tw.png" alt="twitter" />
+                    </a>
+                    <a href="#">
+                        <img src="images/social/social-dbl.png" alt="dribbble" />
+                    </a>
+                </div>
+            </div>
+            <div class="row credits">
+                <div class="col-md-12">
+                    Copyright © 2016. Everflow
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        $(document).ready(function(){
+            $('#ok-btn').click(function(){
+            var id = 1; //временный костыль - заменитель id
+            var tmp = $('#user-answer').val(); 
+            var form_value = tmp.trim();
+
+            var formData = { 'id':id, 'text':form_value };            
+            var data_from_ajax = JSON.stringify($.toJSON(formData));
+            
+            $.ajax({
+                url: '/site/check-word', //заменить url!!!
+                headers: {"Content-Type":"application/json"},
+                crossDomain: true,
+                type: 'post',
+                dataType: 'json',
+                data: data_from_ajax, 
+                success: function (jsondata) {                    
+                    //сюда вставить ф-ю при успехе    
+                }
+
+            })            
+        });
+        });
+
+        $(document).ready(function(){
+            //функция успеха! для первого ajax-a!
+            $('#wrong').click(function(){ 
+            var id = 1; //временный костыль - заменитель id
+            var tmp = $('#user-answer').val(); 
+            var form_value = tmp.trim();
+            
+            var formData = { 'result':true, 'correct':'Do, what r you gonna do.' };
+            var j = $.toJSON(formData);
+
+            //выше получаем строку от Ильдара
+            //засунуть в success:            
+
+            var g = JSON.parse(j); //строку превращаем в объект и получаем к нему доступ
+
+            $("#block_for_task").empty();
+            if (g.result) {
+                var correct = '<p style="color: rgb(18,92,40); text-align: left; font-size: 18px; padding-left: 15px;">Correct!</p>';
+                $('#block_for_answer').html(correct);
+            } else { 
+                correct = '<p style="color: rgb(176,0,0); text-align: left; font-size: 18px; padding-left: 15px;">Incorrect! This is the correct answer:<br /><span style="font-family: Helvetica, Arial;">' + g.correct + '</span></p>';
+                $('#block_for_answer').html(correct);        
+            }          
+        });
+        });
+
+        $(document).ready(function(){
+            $('#next-btn').click(function(){
+            
+            $.ajax({
+                url: '/site/give-me-the-word', //заменить url!!!
+                headers: {"Content-Type":"application/json"},
+                crossDomain: true,
+                type: 'post',
+                dataType: 'json',
+                data: data, 
+                success: function (jsondata) {                    
+                    //сюда вставить ф-ю при успехе    
+                }
+
+            })            
+        });
+        });
+
+        $(document).ready(function(){
+            //функция успеха! для второго ajax-a!
+            $('#cheking-two-ajax').click(function(){ 
+                        
+            var formData = { 'translate':'Куда ты идёшь?', 'id':'2145' };
+            var j = $.toJSON(formData);
+
+            //выше получаем строку от Ильдара
+            //засунуть в success:            
+
+            var g = JSON.parse(j); //строку превращаем в объект и получаем к нему доступ
+               
+            var translate = '<p style="color: rgb(0,0,0); text-align: left; padding-left: 15px; padding-top: 12px;"><span style="font-family: Helvetica, Arial;">'+ g.translate +'<span></p>';
+            $('#block_for_task').html('<p>Translate the following sentence into English, please:</p>');
+            $('#text_fror_translate').html(translate);
+                    
+        });
+        });
+
+        $(document).ready(function(){
+            $('#stats').click(function(){
+            
+            $.ajax({
+                url: '/site/give-me-stats', //заменить url!!!
+                headers: {"Content-Type":"application/json"},
+                crossDomain: true,
+                type: 'post',
+                dataType: 'json',
+                data: data,
+                success: function (jsondata) {                    
+                    //сюда вставить ф-ю при успехе    
+                }
+
+            })            
+        });
+        });
+
+        $(document).ready(function(){
+            //функция успеха! для третьего ajax-a! Cтатсы!
+            $('#cheking-three-ajax').click(function(){ 
+                        
+            var formData = [{'rule':'To be', 'progress':65}, {'rule':'Present Simple', 'progress':21}, {'rule':'Some rule', 'progress':5}, {'rule':'Present Progressive', 'progress':0}, {'rule':'Some rule', 'progress':5}, {'rule':'Some rule', 'progress':5} ,{'rule':'Some rule', 'progress':4}, {'rule':'Some rule', 'progress':71} ]; 
+            var j = $.toJSON(formData);
+            
+            //выше получаем строку от Ильдара
+            //засунуть в success:            
+
+            var g = JSON.parse(j); //строку превращаем в объект и получаем к нему доступ
+            var string_for_stats = '';
+            for (var n in g) {  
+                string_for_stats += '<div id=\"id-stat-' + n + '\" class=\"stat\"><div class=\"rule\"><p>' + g[n].rule + '</p></div><div class=\"progress\"><p>' + g[n].progress + '</p></div></div>';        
+            }            
+            
+            $('.first-container, .second-container').fadeOut(600);
+            $('.third-container').delay(600).fadeIn(600);
+            $('#stats-container').html(string_for_stats);
+                    
+        });
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,874 @@
+[
+	{ 
+		"id":1,
+		"sentence":"I'm a student",
+		"translate":"Я студент",
+		"rules": [
+			{
+				"parts":["I'm"],
+				"rule":"tobe"
+			}
+		]
+	},
+	{ 
+		"id":2,
+		"sentence":"She's twenty",
+		"translate":"Она доктор",
+		"rules": [
+			{
+				"parts":["She's"],
+				"rule":"tobe"
+			}
+		]
+	},
+	{
+		"id":3, 
+		"sentence":"You're beautiful",
+		"translate":"Ты красива",
+		"rules": [
+			{
+				"parts":["You're"],
+				"rule":"tobe"
+			}
+		]
+	},
+	{
+		"id":4, 
+		"sentence":"They aren't Spanish",
+		"translate":"Они не испанцы",
+		"rules": [
+			{
+				"parts":["The aren't"],
+				"rule":"tobe"
+			}
+		]
+	},
+	{
+		"id":5, 
+		"sentence":"Is he seventeen?",
+		"translate":"Ему семнадцать?",
+		"rules": [
+			{
+				"parts":["Is he"],
+				"rule":"tobe"
+			}
+		]
+	},
+	{
+		"id":6, 
+		"sentence":"Are we good friens?",
+		"translate":"Мы хорошие друзья?",
+		"rules": [
+			{
+				"parts":["Are we"],
+				"rule":"tobe"
+			}
+		]
+	},
+	{
+		"id":7, 
+		"sentence":"It's not bad",
+		"translate":"Это не плохо",
+		"rules": [
+			{
+				"parts":["It's not"],
+				"rule":"tobe"
+			}
+		]
+	},
+	{
+		"id":8, 
+		"sentence":"Are you hungry?",
+		"translate":"Ты голоден?",
+		"rules": 
+		[
+			{
+				"parts":["Are you"],
+				"rule":"tobe"
+			}
+		]
+	},
+	{
+		"id":9, 
+		"sentence":"They aren't salesmen",
+		"translate":"Они не продавцы",
+		"rules": 
+		[
+			{
+				"parts":["they aren't"],
+				"rule":"tobe"
+			},
+			{
+				"parts":["salesmen"],
+				"rule":"plural"
+			}
+		]
+	},
+	{
+		"id":10, 
+		"sentence":"It's not bad",
+		"translate":"Это не плохо",
+		"rules": 
+		[
+			{
+				"parts":["It's not"],
+				"rule":"tobe"
+			}
+		]
+	},
+	{
+		"id":11,
+		"sentence":"I like grapes",
+		"translate":"Мне нравится виноград",
+		"rules":
+		[
+			{
+				"parts":["I like"],
+				"rule":"prsm"
+			},
+			{
+				"parts":["grapes"],
+				"rule":"plural"
+			}
+		]
+	},
+	{
+		"id":12,
+		"sentence":"He likes bread",
+		"translate":"Ему нравится хлеб",
+		"rules":
+		[
+			{
+				"parts":["He likes"],
+				"rule":"prsm"
+			}
+		]
+	},
+	{
+		"id":13,
+		"sentence":"She doesn't like pizza",
+		"translate":"Ей не нравится пицца",
+		"rules":
+		[
+			{
+				"parts":["doesn't like"],
+				"rule":"prsm"
+			}
+		]
+	},
+	{
+		"id":14,
+		"sentence":"Do you like potatoes?",
+		"translate":"Тебе нравится картофель?",
+		"rules":
+		[
+			{
+				"partss":["Do","like"],
+				"rule":"prsm"
+			},
+			{"parts":"[potatoes]",
+				"rule":"plural"
+			}
+		]
+	},
+	{
+		"id":15,
+		"sentence":"They don't like parties",
+		"translate":"Им не нравятся вечеринки",
+		"rules":
+		[
+			{
+				"parts":["don't like"],
+				"rule":"prsm"
+			},
+			{
+				"parts":["parties"],
+				"rule":"plural"
+			}
+		]
+	},
+	{
+		"id":16,
+		"sentence":"Does he like videos?",
+		"translate":"Ему нравится видео?",
+		"rules":
+		[
+			{
+				"parts":["Does","like"],
+				"rule":"prsm"
+			},
+			{"parts":["videos"],
+				"rule":"plural"
+			}
+		]
+	},
+	{
+		"id":17,
+		"sentence":"I don't like mice",
+		"translate":"Мне не нравится мыши",
+		"rules":
+		[
+			{
+				"parts":["don't like"],
+				"rule":"prsm"
+			},
+			{"parts":["mice"],
+				"rule":"plural"
+			}
+		]
+	},
+	{
+		"id":18,
+		"sentence":["Does anybody like wolves?"],
+		"translate":"Кому-нибудь нравятся волки?",
+		"rules":
+		[
+			{
+				"parts":["Does","like"],
+				"rule":"prsm"
+			},
+			{"parts":["wolves"],
+				"rule":"plural"
+			}
+		]
+	},
+	{
+		"id":19,
+		"sentence":"Does she make breakfast in the morning?",
+		"translate":"Она готовит завтрак по утрам?",
+		"rules":
+		[
+			{
+				"parts":["Does","make"],
+				"rule":"prsm"
+			}
+		]
+	},
+	{
+		"id":20,
+		"sentence":"We like horror stories",
+		"translate":"Нам нравятся страшилки",
+		"rules":
+		[
+			{
+				"parts":["like"],
+				"rule":"prsm"
+			},
+			{"parts":["stories"],
+				"rule":"plural"
+			}
+		]
+	},
+	{
+		"id":21,
+		"sentence":["Do you watch TV in the evening?"],
+		"translate":"Ты смотришь телевизор по вечерам?",
+		"rules":
+		[
+			{
+				"parts":["Do","watch"],
+				"rule":"prsm"
+			}
+		]
+	},
+	{
+		"id":22,
+		"sentence":"We don't read newspapers",
+		"translate":"Мы не читаем газет",
+		"rules":
+		[
+			{
+				"parts":["don't read"],
+				"rule":"prsm"
+			},
+			{"parts":["newspapers"],
+				"rule":"plural"
+			}
+		]
+	},
+	{
+		"id":23,
+		"sentence":["Do they clean the house?"],
+		"translate":"Они убираются дома?",
+		"rules":
+		[
+			{
+				"parts":["Do","clean"],
+				"rule":"prsm"
+			}
+		]
+	},
+	{
+		"id":24,
+		"sentence":"Who believes in supermen?",
+		"translate":"Кто верит в суперменов?",
+		"rules":
+		[
+			{
+				"parts":["believes"],
+				"rule":"prsm"
+			},
+			{"parts":["supermen"],
+				"rule":"plural"
+			}
+		]
+	},
+	{
+		"id":25,
+		"sentence":"What time do you go to work?",
+		"translate":"Во сколько ты идешь на работу?",
+		"rules":
+		[
+			{
+				"parts":["do","go"],
+				"rule":"prsm"
+			}
+		]
+	},
+	{
+		"id":26,
+		"sentence":"He likes to read an interesting book in the evening",
+		"translate":"Он любит почитать интересную книгу вечером",
+		"rules":
+		[
+			{
+				"parts":["he likes"],
+				"rule":"prsm"
+			},
+			{"parts":["a","book"],
+				"rule":"art"
+			}
+		]
+	},
+	{
+		"id":27,
+		"sentence":"There is a cat in the garden",
+		"translate":"В саду кот",
+		"rules":
+		[
+			{
+				"parts":["There is"],
+				"rule":"thereisare"
+			},
+			{"parts":["a cat"],
+				"rule":"art"
+			},
+			{
+				"parts":["the garden"],
+				"rule":"art"	
+			}
+		]
+	},
+	{
+		"id":28,
+		"sentence":"Is there the key of the car in your pocket?",
+		"translate":"У тебя в кармане ключ от машины?",
+		"rules":
+		[
+			{
+				"parts":["Is there"],
+				"rule":"thereisare"
+			},
+			{"parts":["the key"],
+				"rule":"art"
+			},
+			{
+				"parts":["the car"],
+				"rule":"art"	
+			}
+		]
+	},
+	{
+		"id":29,
+		"sentence":"There is kitchen, a bathroom and two bedrooms in my flat",
+		"translate":"В моей квартире есть кухня, ванная комната и две спальни",
+		"rules":
+		[
+			{
+				"parts":["There is"],
+				"rule":"thereisare"
+			},
+			{"parts":["a kitchen"],
+				"rule":"art"
+			},
+			{
+				"parts":["a bathroom"],
+				"rule":"art"	
+			}
+		]
+	},
+	{
+		"id":30,
+		"sentence":"There are three chairs, a table and a sofa in the living room",
+		"translate":"Кто верит в суперменов?",
+		"rules":
+		[
+			{
+				"parts":["There are"],
+				"rule":"thereisare"
+			},
+			{
+				"parts":["a table"],
+				"rule":"art"
+			},
+			{
+				"parts":["a sofa"],
+				"rule":"art"	
+			},
+			{
+				"parts":["the living room"],
+				"rule":"art"	
+			}
+		]
+	},
+	{
+		"id":31,
+		"sentence":"There isn't a bed in his bedroom",
+		"translate":"В его спальне нет кровати",
+		"rules":
+				[
+					{
+					"parts":["There is"],
+					"rule":"thereisare"
+					},
+					{
+					"parts":["a bed"],
+					"rule":"art"
+					}
+				]
+	},
+	{
+		"id":32,
+		"sentence":"Tim is a doctor at the local hospital",
+		"translate":"Тим - доктор в местой больнице",
+		"rules":
+				[
+					{
+					"parts":["a doctor"],
+					"rule":"art"
+					},
+					{"parts":["the", "hospital"],
+					"rule":"art"
+					}
+				]
+	},
+	{
+		"id":33,
+		"sentence":"Does he play the guitar?",
+		"translate":"Он играет на гитаре?",
+		"rules":
+				[
+					{
+					"parts":["Does","play"],
+					"rule":"prsm"
+					},
+					{"parts":["the guitar"],
+					"rule":"art"
+					}
+				]
+	},
+	{
+		"id":34,
+		"sentence":"The English like tea",
+		"translate":"Тим - доктор в местой больнице",
+		"rules":
+				[
+					{
+					"parts":["like"],
+					"rule":"prsm"
+					},
+					{"parts":["the English"],
+					"rule":"art"
+					}
+				]
+	},
+	{
+		"id":35,
+		"sentence":"There is no beautiful dress!",
+		"translate":"Нет ни одного красивого платья!",
+		"rules":
+				[
+					{
+					"parts":["There is"],
+					"rule":"thereisare"
+					}
+				]
+	},
+	{
+		"id":36,
+		"sentence":"There are no cups on the table",
+		"translate":"На столе нет ни одной кружки",
+		"rules":
+				[
+					{
+					"parts":["There are"],
+					"rule":"thereisare"
+					}
+				]
+	},
+		{
+		"id":37,
+		"sentence":"How many windows are there in the office?",
+		"translate":"Сколько окон в офисе?",
+		"rules":
+				[
+					{
+					"parts":["are there"],
+					"rule":"thereisare"
+					},
+					{"parts":["the office"],
+					"rule":"art"
+					}
+				]
+	},
+	{
+		"id":38,
+		"sentence":"Kate and Andrew live in Ufa",
+		"translate":"Катя и Андрей живут в Уфе",
+		"rules":
+				[
+					{
+					"parts":["live"],
+					"rule":"prsm"
+					}
+				]
+	},
+	{
+		"id":39,
+		"sentence":"Harry watches TV every day",
+		"translate":"Гарри смотрит телевизор каждый день",
+		"rules":
+				[
+					{
+					"parts":["watches"],
+					"rule":"prsm"
+					}
+				]
+	},
+	{
+		"id":40,
+		"sentence":"Sarah seldom gets up early",
+		"translate":"Сара редко встает рано",
+		"rules":
+				[
+					{
+					"parts":["gets"],
+					"rule":"prsm"
+					}
+				]
+	},
+	{
+		"id":41,
+		"sentence":"I don't go to the cinems with the friends",
+		"translate":"Я не хожу в кино с друзьями",
+		"rules":
+				[
+					{
+					"parts":["don't go"],
+					"rule":"prsm"
+					},
+					{"parts":["the friends"],
+					"rule":"art"
+					}
+				]
+	},
+	{
+		"id":42,
+		"sentence":"In winter it doesn't snow a lot",
+		"translate":"Зимой идет не очень много снега",
+		"rules":
+				[
+					{
+					"parts":["doesn't snow"],
+					"rule":"prsm"
+					}
+				]
+	},
+	{
+		"id":43,
+		"sentence":"Leo often sings in the shower",
+		"translate":"Лев часто поет в душе",
+		"rules":
+				[
+					{
+					"parts":["sings"],
+					"rule":"prsm"
+					},
+					{"parts":["the shower"],
+					"rule":"art"
+					}
+				]
+	},
+	{
+		"id":44,
+		"sentence":"We train in the gym on Thursday",
+		"translate":"Тим - доктор в местой больнице",
+		"rules":
+				[
+					{
+					"parts":["train"],
+					"rule":"prsm"
+					},
+					{"parts":["the gym"],
+					"rule":"art"
+					}
+				]
+	},
+	{
+		"id":45,
+		"sentence":"I'm working in the garden now",
+		"translate":"",
+		"rules":
+				[
+					{
+					"parts":["I'm working"],
+					"rule":"prcont"
+					},
+					{"parts":["the garden"],
+					"rule":"art"
+					}
+				]
+	},
+	{
+		"id":46,
+		"sentence":"Robert is not waiting for the bus at this moment",
+		"translate":"Роберт не ждет сейчас автобуса",
+		"rules":
+				[
+					{
+					"parts":["is not waiting"],
+					"rule":"prcont"
+					}
+				]
+	},
+	{
+		"id":47,
+		"sentence":"We are in the cinema now and are deciding what movie to watch",
+		"translate":"Мы сейчас в кинотеатре и решаем, какой фильм посмотреть",
+		"rules":
+				[
+					{
+					"parts":["are","deciding"],
+					"rule":"prcont"
+					},
+					{"parts":["the cinema"],
+					"rule":"art"
+					}
+				]
+	},
+	{
+		"id":48,
+		"sentence":"Mom and Dad are sitting in the kitchen and drinking tea",
+		"translate":"Мама с папой сидят на кухне и пьют чай",
+		"rules":
+				[
+					{
+					"parts":["are", "sitting", "drinking"],
+					"rule":"prcont"
+					},
+					{"parts":["the kitchen"],
+					"rule":"art"
+					}
+				]
+	},
+	{
+		"id":49,
+		"sentence":"I'm not lying to you!",
+		"translate":"Я не обманываю тебя!",
+		"rules":
+				[
+					{
+					"parts":["I'm", "lying"],
+					"rule":"art"
+					}
+				]
+	},
+	{
+		"id":50,
+		"sentence":"My sisters are staying at our grandparents now",
+		"translate":"Мои сестры гостят сейчас у бабушки с дедушкой",
+		"rules":
+				[
+					{
+					"parts":["are staying"],
+					"rule":"prcont"
+					}
+				]
+	},
+	{
+		"id":51,
+		"sentence":"Am I making lots of noise?",
+		"translate":"Я создаю много шума?",
+		"rules":
+				[
+					{
+					"parts":["am","making"],
+					"rule":"prcont"
+					}
+				]
+	},
+		{
+		"id":52,
+		"sentence":"She is not reading a newspaper now",
+		"translate":"Она не читает газету сейчас",
+		"rules":
+				[
+					{
+					"parts":["is","reading"],
+					"rule":"prcont"
+					},
+					{"parts":["the", "hospital"],
+					"rule":"art"
+					}
+				]
+	},
+	{
+		"id":53,
+		"sentence":"Are you enjoying your holiday?",
+		"translate":"Ты хорошо проводишь время в отпуске?",
+		"rules":
+				[
+					{
+					"parts":["are","enjoying"],
+					"rule":"prcont"
+					}
+				]
+	},
+	{
+		"id":54,
+		"sentence":"Why is it raining again?",
+		"translate":"Почему опять идет дождь?",
+		"rules":
+				[
+					{
+					"parts":["is","raining"],
+					"rule":"prcont"
+					}
+				]
+	},
+	{
+		"id":55,
+		"sentence":"Ann isn't having a good time in Egypt",
+		"translate":"Анна не очень хорошо проводит время в Египте",
+		"rules":
+				[
+					{
+					"parts":["isn't having"],
+					"rule":"prcont"
+					}
+				]
+	},
+	{
+		"id":56,
+		"sentence":"When are Emma and Sam flying to America?",
+		"translate":"Когда Эмма и Сэм летят в Америку?",
+		"rules":
+				[
+					{
+					"parts":["are", "flying"],
+					"rule":"prcont"
+					}
+				]
+	},
+	{
+		"id":57,
+		"sentence":"Fred is eating a sandwich for his lunch",
+		"translate":"Фред обедает сэндвичем",
+		"rules":
+				[
+					{
+					"parts":["is eating"],
+					"rule":"prcont"
+					},
+					{"parts":["a sandwich"],
+					"rule":"art"
+					}
+				]
+	},
+	{
+		"id":58,
+		"sentence":"They are walking in the park",
+		"translate":"Они гуляют в парке",
+		"rules":
+				[
+					{
+					"parts":["are walking"],
+					"rule":"prcont"
+					},
+					{"parts":["the park"],
+					"rule":"art"
+					}
+				]
+	},
+		{
+		"id":59,
+		"sentence":"Where are you going?",
+		"translate":"Куда ты идешь?",
+		"rules":
+				[
+					{
+					"parts":["are","going"],
+					"rule":"prcont"
+					}
+				]
+	},
+	{
+		"id":60,
+		"sentence":"Why aren't you cooking dinner? I'm hungry",
+		"translate":"Почему ты не готовишь ужин? Я голоден",
+		"rules":
+				[
+					{
+					"parts":["aren't","cooking"],
+					"rule":"prcont"
+					},
+					{
+					"parts":["I'm"],
+					"rule":"tobe"	
+					}
+				]
+	},
+	{
+		"id":61,
+		"sentence":"We were best friends When we were children",
+		"translate":"Мы были лучшими друзьями, когда были детьми",
+		"rules":
+				[
+					{
+					"parts":["were"],
+					"rule":"pastsim"
+					}
+				]
+	},
+	{
+		"id":62,
+		"sentence":"It was a fantastic match!",
+		"translate":"Это был потрясающий матч!",
+		"rules":
+				[
+					{
+					"parts":["was"],
+					"rule":"pastsim"
+					},
+					{"parts":["a", "match"],
+					"rule":"art"
+					}
+				]
+	},
+	{
+		"id":63,
+		"sentence":"We visited a very beautiful castle",
+		"translate":"Мы посетили очень красивый замок",
+		"rules":
+				[
+					{
+					"parts":["visited"],
+					"rule":"pastsim"
+					},
+					{"parts":["a", "castle"],
+					"rule":"art"
+					}
+				]
+	}	
+	
+]
