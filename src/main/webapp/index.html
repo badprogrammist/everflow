@@ -33,7 +33,7 @@
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        Лидеры <b class="caret"></b>
+                        Liders <b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
                         <li><a href="index.html">Ivan Veselov</a></li>
@@ -43,7 +43,7 @@
                 </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        Мои задания <b class="caret"></b>
+                        My Exercises <b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
                         <li><a style="cursor: pointer;"
@@ -56,11 +56,11 @@
                 </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        Мой профиль<b class="caret"></b>
+                        My profile<b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a id="stats">Статистика</a></li>
-                        <li><a>Настройки</a></li>
+                        <li><a style="cursor: pointer;" id="stats">Statistics</a></li>
+                        <li><a>Settings</a></li>
                     </ul>
                 </li>
             </ul>
@@ -70,7 +70,7 @@
 
 <div id="hero" style="background-image: url('images/bg.jpg');">
     <div class="bg-dark" style="">
-        <div class="container first-container" style="display: none;">
+        <div class="container first-container">
             <h1 class="hero-text animated fadeInDown">
                 Learn English<br/>
                 with Everflow
@@ -84,7 +84,7 @@
             </div>
             <div class="img img-notebook"></div>
         </div>
-        <div class="container second-container">
+        <div class="container second-container" style="display: none">
             <div><h1>Your exercises</h1></div>
             <div class="block-task">
                 <div id="block_for_task" style="height: 25px; width: 100%;"></div>
@@ -258,7 +258,7 @@
                     var massive_color = ['rgb(255,128,255)', 'rgb(135,206,235)', 'rgb(255,160,122)', 'rgb(255,105,180)', 'rgb(221,160,221)', 'rgb(60,179,113)', 'rgb(188,209,1)', 'rgb(12,199,45)', 'rgb(68,66,145)']; //colors for graphs
                     var string_for_stats = '';
                     for (var n in g) {
-                        string_for_stats += '<div id=\"id-stat-' + n + '\" class=\"stat\"><div class=\"progress\"><p>' + g[n].rule + '</p><input type=\"text\" data-fgColor=\"' + massive_color[n] + '\" data-readOnly=true data-width=\"120\" value=\"' + g[n].progress + '\" class=\"dial-' + n + '\"></div></div>';
+                        string_for_stats += '<div id=\"id-stat-' + n + '\" class=\"stat\"><div class=\"progress\"><p>' + g[n].rule + '</p><input type=\"text\" data-fgColor=\"' + massive_color[n] + '\" data-readOnly=true data-width=\"120\" value=\"' + Math.round(g[n].progress).toFixed(0) + '\" class=\"dial-' + n + '\"></div></div>';
                     }
                     $('#stats-container').html(string_for_stats);
                     $('.first-container, .second-container').fadeOut(600);
